@@ -8,6 +8,10 @@
   --purple-grey: #8f8297;
 }
 
+*{
+  color: var(--white);
+}
+
 
 body{
   margin: 0;
@@ -21,4 +25,22 @@ body{
 
 input{
   font-family: "Inter",sans-serif;
+}
+
+.input-wrapper{
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper h1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
 }

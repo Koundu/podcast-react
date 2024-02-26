@@ -1,6 +1,6 @@
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import SignUpPage from './assets/pages/SignUp.jsx'
+import SignUpPage from './assets/pages/SignUpPage.jsx'
 
 function App() {
 

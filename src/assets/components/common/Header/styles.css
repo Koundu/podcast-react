@@ -29,8 +29,8 @@
     position: absolute;
     z-index: 1;
     top: -100px;
-    right: 0;
     width: 800px;
+    left: 30%;
     height: 150px;
     margin: auto;
     background-color: var(--blue);
