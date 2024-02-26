@@ -1,3 +1,42 @@
-.nav{
-    background-color: antiquewhite;
+.navbar{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.links a{
+    color: var(--purple-grey);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--white);
+    transition: all 0.3s;
+    font-size: 28px;
+}
+
+.gradient{
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    right: 0;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    background-color: var(--blue);
+    filter: blur(100px);
+}
+
+.active{
+    color: var(--white)  !important;
 }

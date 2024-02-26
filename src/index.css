@@ -8,16 +8,17 @@
   --purple-grey: #8f8297;
 }
 
+
 body{
   margin: 0;
   font-family: "Inter",sans-serif;
   --webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  background-color: var(--theme);
+  width: 1920px;
+  height: 1080px;
   color: var(--white);
 }
 
 input{
   font-family: "Inter",sans-serif;
 }
-

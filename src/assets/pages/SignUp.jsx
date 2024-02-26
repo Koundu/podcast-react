@@ -1,11 +1,12 @@
 import React from "react"
+import Header from "../components/Header/index.jsx";
 
-const SignUp = () => {
+const SignUpPage = () => {
   return (
     <div>
-        <p>This is an SignUp Page</p>
+        <Header/>
     </div>
   )
 };
 
-export default SignUp;
+export default SignUpPage;

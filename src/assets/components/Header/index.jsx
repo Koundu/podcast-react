@@ -1,10 +1,22 @@
 import React from "react"
 import "./styles.css"
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const currPath = location.pathname;
+  console.log("Current Path is", currPath);
   return (
     <div>
-        <div className="nav">Header</div>
+        <div className="gradient"></div>
+        <div className="navbar">
+            <div className="links">
+                <Link to="/" className={currPath == "/" ? "active": ""}>Signup</Link>
+                <Link to="/podcasts" className={currPath == "/podcasts" ? "active": ""}>Podcasts</Link>
+                <Link to="/start-podcast" className={currPath == "/start-podcast" ? "active": ""}>Start A Podcast</Link>
+                <Link to="/profile" className={currPath == "/profile" ? "active": ""}>Profile</Link>
+            </div>
+        </div>
     </div>
   )
 };
