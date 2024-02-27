@@ -21,8 +21,8 @@
 
 .links a:hover{
     color: var(--white);
-    transition: all 0.3s;
-    font-size: 28px;
+    transition: all 0.4s;
+    font-size: 26px;
 }
 
 .gradient{
