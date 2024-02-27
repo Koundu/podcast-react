@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <div>
         <Header/>
-        <h1>Hello, {user.name}</h1>
+        <h1><span id="waving-hand">&#128075;</span> {user.name}</h1>
         <h2>EMail: {user.email}</h2>
         <h2>UID: {user.uid}</h2>
     </div>

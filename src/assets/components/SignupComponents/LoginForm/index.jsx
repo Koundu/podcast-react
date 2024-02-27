@@ -8,15 +8,19 @@ import { getDoc,doc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../../../slices/userSlice";
+import { toast } from "react-toastify";
 
 const LoginForm = () => {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
+    const [loading,setLoading] = useState(false);
     const navigate = useNavigate();
     const dispatch = useDispatch();
   
     const handleLogin = async ()=>{
         console.log("Handling Login...");
+        setLoading(true);
+        if(email && password){
         try{
           //Creation of Users Acount
           const userCredential = await signInWithEmailAndPassword(
@@ -39,12 +43,20 @@ const LoginForm = () => {
                   uid: user.uid,
               }
               ));
-
+              toast.success("Login Successful!")
+              setLoading(false);
               navigate("/profile")
       }catch(e){
-          console.log("Error",e)
+          console.log("Error Signing In",e);
+          setLoading(false);
+          toast.error(e.message);
       }
-
+    }else{
+      toast.error("Email and Password are not Empty!");
+      setTimeout(() => {
+        setLoading(false);
+      }, 2500);
+    }
     }
   return (
     <>
@@ -62,7 +74,7 @@ const LoginForm = () => {
         type="password"
         required={true}
     />
-    <Button text={"Login"} onClick={handleLogin}/>
+    <Button text={loading ? "Loading..." : "Login"} onClick={handleLogin}/>
     </>
   )
 };
