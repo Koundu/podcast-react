@@ -18,3 +18,11 @@
     color: var(--purple-grey);
 
 }
+
+.label-input{
+    color: var(--purple-grey);
+}
+
+.active{
+    border-color: var(--white);
+}

@@ -17,7 +17,6 @@ const SignUpPage = () => {
           {!flag ? 
           (<p onClick={()=>{setFlag(!flag)}} style={{cursor:"pointer"}}>Click here, if you already have an Account. Login.</p>): 
           (<p onClick={()=>{setFlag(!flag)}} style={{cursor:"pointer"}}>Don't have an account? Click here to signup.</p>)}
-        
         </div>
     </div>
   )

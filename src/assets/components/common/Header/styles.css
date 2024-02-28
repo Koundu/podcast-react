@@ -21,7 +21,7 @@
 
 .links a:hover{
     color: var(--white);
-    transition: all 0.4s;
+    transition: all 0.2s;
     font-size: 26px;
 }
 

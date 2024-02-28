@@ -13,8 +13,8 @@ const Header = () => {
             <div className="links">
                 <Link to="/" className={currPath == "/" ? "active": ""}>Signup</Link>
                 <Link to="/podcasts" className={currPath == "/podcasts" ? "active": ""}>Podcasts</Link>
-                <Link to="/start-podcast" className={currPath == "/start-podcast" ? "active": ""}>Start A Podcast</Link>
-                <Link to="/profile" className={currPath == "/profile" ? "active": ""}>Profile</Link>
+                <Link to="/create-a-podcast" className={currPath == "/start-podcast" ? "active": ""}>Start A Podcast</Link>
+                <Link to="/profile" className={currPath == "/private/profile" ? "active": ""}>Profile</Link>
             </div>
         </div>
     </div>
