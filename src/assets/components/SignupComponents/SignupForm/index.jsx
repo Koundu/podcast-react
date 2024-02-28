@@ -60,9 +60,7 @@ const SignUpForm = () => {
         }catch(e){
             console.log("Error",e);
             toast.error(e.message);
-            if(e.message == "FirebaseError: Firebase: Error (auth/email-already-in-use)."){
-                <LoginForm/>
-            }
+                
             setLoading(false);
         }
     }else{

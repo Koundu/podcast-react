@@ -61,3 +61,15 @@ input{
  100% { transform: rotate( 0.0deg) }
 }
 
+.podcasts-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  flex-wrap: wrap;
+}
+
+a{
+  text-decoration: none;
+}
+
